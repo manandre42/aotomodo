@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoModo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pop: {
+                base: '#FFFDF8', // Cream background
+                text: '#18181B', // Nearly black
+                surface: '#FFFFFF',
+                primary: '#A855F7', // Purple
+                secondary: '#14F195', // Mint Green
+                accent: '#FF5E82', // Hot Pink
+                warning: '#FACC15', // Yellow
+                border: '#18181B', // Black border
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            boxShadow: {
+              'hard': '4px 4px 0px 0px #18181B',
+              'hard-sm': '2px 2px 0px 0px #18181B',
+              'hard-hover': '2px 2px 0px 0px #18181B', // Pressed state
+              'hard-lg': '6px 6px 0px 0px #18181B',
+            },
+            borderWidth: {
+              '3': '3px',
+            },
+            borderRadius: {
+              '4xl': '2rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-pop-base text-pop-text antialiased">
+    <div id="root"></div>
+  </body>
+</html>
